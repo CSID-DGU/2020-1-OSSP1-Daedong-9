@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5 Geolocation</title>
+<body>
+<script>
+function init()
+{
+    window.navigator.geolocation.getCurrentPosition(current_position);
+}
+ 
+function current_position(position)
+{
+    var msg;
+    
+    msg = "Latitude(위도): " + position.coords.latitude + ", " + "Longitude(경도): " + position.coords.longitude;
+    
+ 	document.write(msg);
+
+}
+ 
+window.addEventListener("load", init);
+</script>
+</body>
+</html>
