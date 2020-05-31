@@ -15,10 +15,15 @@ print('현재 위치: '+find_address)
 find_currenttemp = data1.find('span',{'class': 'todaytemp'}).text
 print('현재 온도: '+find_currenttemp+'℃')
 
+WeatherCast = data1.find('p', {'class' : 'cast_txt'}).text
+print("현재 상태: " + WeatherCast)
+
 data2 = data1.findAll('dd')
 find_dust = data2[0].find('span', {'class':'num'}).text
-find_ultra_dust = data2[1].find('span', {'class':'num'}).text
-find_ozone = data2[2].find('span', {'class':'num'}).text
 print('현재 미세먼지: '+find_dust)
-print('현재 초미세먼지: '+find_ultra_dust)
-print('현재 오존지수: '+find_ozone)
+
+find_ultra_dust = data2[1].find('span', {'class':'num'}).text
+#find_ozone = data2[2].find('span', {'class':'num'}).text
+
+#print('현재 초미세먼지: '+find_ultra_dust)
+#print('현재 오존지수: '+find_ozone)
