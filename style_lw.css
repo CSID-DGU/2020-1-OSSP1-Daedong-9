@@ -1,0 +1,95 @@
+/*-----------------------CSS RESET ---------------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*------------------- HTML Background -----------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/*---------------------- Container ---------------------*/
+
+.main-container {
+    height: 75vh;
+    width: 70vw;
+    background: white;
+    margin: 20px auto;
+    border: 5px solid black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+/*------------------------ title -----------------------*/
+
+.title {
+    margin: 30px 0 60px 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/*------------------------ icon -----------------------*/
+
+.weather-icon {
+    margin: 50px 0 10px 0;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+}
+
+/*------------------------ temp -----------------------*/
+
+.temperature {
+    margin: 10px 0 20px 0;
+}
+
+p {
+    font-size: 30px;
+}
+
+/*------------------- description --------------------*/
+
+.description {
+    margin: 20px 0 0 0;
+}
+
+/*------------------- media queries --------------------*/
+
+@media (min-width: 600px) {
+    .main-container {
+        height: 90vh;
+    }
+    .title {
+        margin: 30px 0 30px 0;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    img {
+        height: 180px;
+        width: 180px;
+    }
+    .temperature {
+        margin: 10px 0 10px 0;
+    }
+    p {
+        font-size: 45px;
+    }
+    .description {
+        margin: 10px 0 0 0;
+    }
+}
