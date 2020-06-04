@@ -7,6 +7,7 @@ const description = document.querySelector(".description");
 
 //Weather data that pulled form api:
 const weather = {};
+const address = {};
 
 //Api key & Kelvin(used since temp data from api returns kelvin):
 const key = "a49cd5d13210a3857dd22a130c762b15";
@@ -26,12 +27,10 @@ if (navigator.geolocation) {//위치를 받아온 경우
 } else {//위치를 못받아오는 경우->입력으로 위치 정보 받기 or 가입시 입력한 주소를 기본으로 검색
     console.log("이 브라우저에서는 Geolocation이 지원되지 않습니다.");
 }
-
 //Get weather data from api provider - "Open Weather Maps":
 function getWeather(latitude, longitude) {
     let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
     console.log(api);
-
     //Fetch api data and store it:
     fetch(api)
         .then(function (response) {
@@ -39,15 +38,20 @@ function getWeather(latitude, longitude) {
             return data;
         })
         .then(function (data) {
-            weather.temperature = Math.floor(data.main.temp - kelvin);
-            weather.description = firstLetter(data.weather[0].description);
-            weather.iconId = data.weather[0].icon;
-            weather.city = data.name;
-            weather.country = data.sys.country;
+            weather.temperature = Math.floor(data.main.temp - kelvin);//현재 온도
+            weather.temperature_feel=Math.floor(data.main.feels_like-kelvin);//최고온도
+            weather.temperature_high=Math.floor(data.main.temp_max-kelvin);//최고온도
+            weather.temperature_low=Math.floor(data.main.temp_min-kelvin);//최저온도                 
+            weather.description = firstLetter(data.weather[0].description);//날씨설명-영어
+            weather.humidity=data.main.humidity;
+            weather.iconId = data.weather[0].icon;//날씨 아이콘
+            weather.city = data.name;//도시 이름
+            weather.country = data.sys.country;//나라 이름
+            weather.wind=data.wind.speed;//풍속
+
         })
         .then(function () {
             displayWeather();
-          
         });
 }
 
@@ -58,15 +62,27 @@ function displayWeather() {
     //JavaScript HTML changes based on the data from api:
     icon.innerHTML = '<img src="icons/' + weather.iconId + '.png"/>';
     temp.innerHTML =
-        "<p>" + weather.temperature + "°C/" + fahrenheit + "°F" + "</p>";
+        "<p>현재 온도 : " + weather.temperature + "°C"+
+        ", 체감 온도 : "+
+        weather.temperature_feel+
+        "<p> 최고 온도 : "+
+        weather.temperature_high+
+        ", 최저 온도 : "+
+        weather.temperature_low;
     description.innerHTML =
-        "<p>" +
-        wDescEngToKor(weather.description) +
-        "<br>" +
-        weather.city +
+    	"<p> 습도 : "+
+    	weather.humidity+
+        "<p> 날씨 : " +
+        wDescEngToKor(weather.description) +//날씨
+        "<br> 위치 : " +
+        weather.city +//도시이름
         ", " +
-        weather.country +
-        "</p>";
+        weather.country +//나라이름
+        "</p> 풍속 : "+
+        weather.wind+//바람
+        "m/s</p>"
+        ;
+    
     
 }
 
