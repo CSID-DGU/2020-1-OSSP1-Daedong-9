@@ -1,0 +1,13 @@
+create database WEATHER;
+
+use WEATHER;
+
+CREATE TABLE USER(
+userID varchar(20),
+userPassword varchar(20),
+userGender varchar(20),
+userTemperature varchar(20),
+userAddress varchar(20),
+userEmail varchar(50),
+PRIMARY KEY(userID)
+); 
