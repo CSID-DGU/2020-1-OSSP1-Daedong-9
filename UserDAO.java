@@ -12,7 +12,7 @@ public class UserDAO {
 	
 	public UserDAO() {
 		try {
-			String dbURL = "jdbc:mysql://localhost:3306/weather";
+			String dbURL = "jdbc:mysql://localhost:3307/weather";
 			String dbID="root";
 			String dbPassword = "0000";
 			Class.forName("com.mysql.jdbc.Driver");
