@@ -1,12 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <meta name = "viewport" content = "width=device-width" initial-scale = "1">
 <link rel = "stylesheet" href = "css/bootstrap.css">
-<title>JSP °Ô½ÃÆÇ À¥ »çÀÌÆ®</title>
+<title>Login</title>
 </head>
 <body>
 	<nav class = "navbar navbar-default">
@@ -18,21 +18,18 @@
 				<span class = "icon-bar"></span>
 				<span class = "icon-bar"></span>				
 			</button>
-			<a class = "navbar-brand" href = "main.jsp">JSP °Ô½ÃÆÇ À¥ »çÀÌÆ®</a>
+			<a class = "navbar-brand" href = "main.jsp">HOME</a>
 		</div>
 		<div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
-			<ul class = "nav navbar-nav">
-				<li><a href = "main.jsp">¸ÞÀÎ</a></li>
-				<li><a href = "bbs.jsp">°Ô½ÃÆÇ</a></li>
-			</ul>
+			
 			<ul class = "nav navbar-nav navbar-right">
 				<li class ="dropdown">
 					<a href = "#" class = "dropdown-toggle"
 					data-toggle="dropdown" role = "button" aria-haspopup="true"
-					aria-expanded="false">Á¢¼ÓÇÏ±â	<span class = "caret"></span></a>
+					aria-expanded="false">ì ‘ì†í•˜ê¸°	<span class = "caret"></span></a>
 					<ul class = "dropdown-menu">
-						<li class = "active"><a href = "login.jsp">·Î±×ÀÎ</a></li>
-						<li><a href = "join.jsp">È¸¿ø°¡ÀÔ</a></li>
+						<li class = "active"><a href = "login.jsp">ë¡œê·¸ì¸</a></li>
+						<li><a href = "join.jsp">íšŒì›ê°€ìž…</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -43,15 +40,15 @@
 		<div class ="col-lg-4">
 			<div class = "jumbotron" style="padding-top:20px;">
 				<form method = "post" action = "loginAction.jsp">
-					<h3 style = "text-align: center;">·Î±×ÀÎ È­¸é</h3>
+					<h3 style = "text-align: center;">ë¡œê·¸ì¸ í™”ë©´</h3>
 					<div class = "form-group">
-						<input type = "text" class= "form-control" placeholder="¾ÆÀÌµð" name = "userID" maxlength="20">
+						<input type = "text" class= "form-control" placeholder="ì•„ì´ë””" name = "userID" maxlength="20">
 					</div>
 					<div class = "form-group">
-						<input type = "password" class= "form-control" placeholder="ºñ¹Ð¹øÈ£" name = "userPassword" maxlength="20">
+						<input type = "password" class= "form-control" placeholder="ë¹„ë°€ë²ˆí˜¸" name = "userPassword" maxlength="20">
 					</div>
 					
-					<input type = "submit" class = "btn btn-primary form-control" value = "·Î±×ÀÎ">
+					<input type = "submit" class = "btn btn-primary form-control" value = "ë¡œê·¸ì¸">
 					
 					</form>
 			</div></div></div>
