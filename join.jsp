@@ -61,22 +61,22 @@
 						</label>  									
 						</div>
 					</div>	
-			
-  			
-					<div class = "form-group" style="text-align: center;">	
-						<div class = "btn-group" data-toggle="buttons">
-							<label class= "btn btn-primary active">
-								<input type="radio" name="userTemperature" autocomplete="off" value=similar" checked>보통
-							</label>
-							<label class= "btn btn-primary">
-								<input type="radio" name="userTemperature" autocomplete="off" value="moreCold">추위를 많이탐
-							</label>
-							<label class= "btn btn-primary">
-								<input type="radio" name="userTemperature" autocomplete="off" value="moreHot">더위를 많이 탐
-							</label>    									
+					
+					<!-- 체크박스  -->
+					
+					<div class = "form-group" style="text-align: center;">				
+						<div class="checkbox">
+	   	 					<label>
+        						<input type="checkbox" name="userTemperature" value="MoreHot">더위에 민감함					
+    						</label>
+   							 <label>
+					       	    <input type="checkbox" name="userTemperature" value="MoreCold">추위에 민감함				       
+						    </label>
+						    <label>
+					        	<input type="checkbox" name="userTemperature" value="Simillar" checked>보통					    
+					   		</label>
 						</div>
 					</div>
-
 					<div class = "form-group">
 						<input type="text" class= "form-control" placeholder="ㅇㅇ시ㅇㅇ동" name = "userAddress" maxlength="20">
 					</div>
