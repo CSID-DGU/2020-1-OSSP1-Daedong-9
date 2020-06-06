@@ -9,6 +9,12 @@
 <link rel = "stylesheet" href = "css/bootstrap.css">
 <link rel = "stylesheet" href = "css/custom.css">
 <title>날씨에 따른 옷 추천</title>
+<style>
+h1{
+text-align:center;
+}
+
+</style>
 </head>
 <body>
    <%
@@ -27,7 +33,6 @@
             <span class = "icon-bar"></span>            
          </button>
          <a class = "navbar-brand" href = "main.jsp">HOME</a>
-         <a class = "navbar-brand" href = "closetmain.html">My Closet</a>
       </div>
       <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
          <%
@@ -72,58 +77,31 @@
    if(userID==null){//로그인을 안 한 경우-로그인 홈페이지로 이동
 %>
 
-            <p><a class = "btn btn-primary btn-pull" href = "login.jsp" role ="button">자세히 알아보기</a></p>
+            <p><a class = "btn btn-primary btn-pull" href = "login.jsp" role ="button">날씨 보기</a></p>
 
 
 <%}else{//로그인 한 경우-날씨 화면창으로 이동
    %>
 
 
-            <p><a class = "btn btn-primary btn-pull" href = "liveweather.html" role ="button">자세히 알아보기</a></p>
+            <p><a class = "btn btn-primary btn-pull" href = "liveweather.html" role ="button">날씨 보기</a></p>
 
 <%} %>
 
          </div>
       </div>
    </div>
-    <div class = "container">
- 			<div style="float:left">최근 추가한 옷</div> 
-		 </div>
 
-  					 <div class="owl-item">						
-						<div class="container fill_height">
-							<div class="row fill_height">
-								<div class="col fill_height">
-									<div class="home_container d-flex flex-column align-items-center justify-content-start">
-										<div class="home_content">
-											<div class="home_items">
-												<div class="row">
-													<div class="col-sm-3 offset-lg-1">
-														<div class="home_item_side"><a href="closetmain.html"><img src="images/1.JPG" alt=""></a></div>
-													</div>
-													<div class="col-sm-3 offset-lg-1">
-														<div class="home_item_side"><a href="closetmain.html"><img src="images/2.JPG" alt=""></a></div>
-													</div>												
-													<div class="col-sm-3">
-														<div class="home_item_side"><a href="closetmain.html"><img src="images/3.JPG" alt=""></a></div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>	
-					</div>
-    <!--
-   <div class = "container">
-      <div id = "myCarousel" class = "carousel slide" data-ride ="carousel">
-         <ol class = "carousel-indicators">
+   <div class = "container" >
+
+      <div id = "myCarousel" class = "carousel slide" data-ride ="carousel" >
+         <ol class = "carousel-indicators" >
             <li data-target="#myCarousel" data-slide-to ="0" class = "active"></li>
             <li data-target="#myCarousel" data-slide-to ="1"></li>
             <li data-target="#myCarousel" data-slide-to ="2"></li>
             
          </ol>
+
          <div class="carousel-inner">
             <div class = "item active">
                <img src="images/1.JPG">
@@ -142,8 +120,9 @@
             <span class = "glyphicon glyphicon-chevron-right"></span>
          </a>
       </div>
+
    </div>
--->
+
    <script src = "https://code.jquery.com/jquery-3.1.1.min.js"></script>
    <script src = "js/bootstrap.js"></script>
 </body>
