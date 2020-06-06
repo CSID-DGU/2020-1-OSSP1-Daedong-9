@@ -86,6 +86,36 @@
          </div>
       </div>
    </div>
+    <div class = "container">
+ 			<div style="float:left">최근 추가한 옷</div> 
+		 </div>
+
+  					 <div class="owl-item">						
+						<div class="container fill_height">
+							<div class="row fill_height">
+								<div class="col fill_height">
+									<div class="home_container d-flex flex-column align-items-center justify-content-start">
+										<div class="home_content">
+											<div class="home_items">
+												<div class="row">
+													<div class="col-sm-3 offset-lg-1">
+														<div class="home_item_side"><a href="closetmain.html"><img src="images/1.JPG" alt=""></a></div>
+													</div>
+													<div class="col-sm-3 offset-lg-1">
+														<div class="home_item_side"><a href="closetmain.html"><img src="images/2.JPG" alt=""></a></div>
+													</div>												
+													<div class="col-sm-3">
+														<div class="home_item_side"><a href="closetmain.html"><img src="images/3.JPG" alt=""></a></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+    <!--
    <div class = "container">
       <div id = "myCarousel" class = "carousel slide" data-ride ="carousel">
          <ol class = "carousel-indicators">
@@ -113,6 +143,7 @@
          </a>
       </div>
    </div>
+-->
    <script src = "https://code.jquery.com/jquery-3.1.1.min.js"></script>
    <script src = "js/bootstrap.js"></script>
 </body>
