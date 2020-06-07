@@ -132,7 +132,7 @@ border:0;
                    <div class="row">
                       <div class="col-md-3 edges thumbnail"><img src="images/5.JPG" alt="Image" style="max-width:100%;"></div>
                       <div class="col-md-3 edges thumbnail"><img src="images/6.JPG" alt="Image" style="max-width:100%;"></div>
-                      <div class="col-md-3 edges thumbnail"><img src="iimages/7.JPG" alt="Image" style="max-width:100%;"></div>
+                      <div class="col-md-3 edges thumbnail"><img src="images/7.JPG" alt="Image" style="max-width:100%;"></div>
                       <div class="col-md-3 edges thumbnail"><img src="images/8.JPG" alt="Image" style="max-width:100%;"></div>
                    </div><!--.row-->
                 </div><!--.item-->
