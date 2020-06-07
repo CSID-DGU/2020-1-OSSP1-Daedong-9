@@ -12,14 +12,16 @@ public class UserDAO {
 	
 	public UserDAO() {
 		try {
-			String dbURL = "jdbc:mysql://localhost:3307/weather";
+			String dbURL = "jdbc:mysql://localhost:3307/weather?serverTimezone=UTC";
 			String dbID="root";
 			String dbPassword = "0000";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(dbURL,dbID,dbPassword);
 			}catch(Exception e) {
 			e.printStackTrace();
-		}
+			
+			}
+		
 	}
 	public int login(String userID, String userPassword) {
 		String SQL = "SELECT userPassword FROM USER WHERE userID = ?";
@@ -33,20 +35,21 @@ public class UserDAO {
 				else
 					return 0;//비밀번호 불일치
 			}
-			return -1;//아이디가 없음
-		}catch(Exception e) {e.printStackTrace();}
+			return -1;//일치하는 아이디가 없음
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 		return -2;//데이터베이스 오류
 	}
 	public int join(User user) {
-		String SQL = "INSERT INTO USER VALUES (?, ?, ?, ?, ?, ?)";
+		String SQL = "INSERT INTO USER VALUES (?, ?, ?, ?, ?)";
 		try {
 			pstmt=conn.prepareStatement(SQL);
 			pstmt.setString(1, user.getUserID());
 			pstmt.setString(2, user.getUserPassword());
 			pstmt.setString(3, user.getUserGender());
-			pstmt.setString(4, user.getUserTemperature());
-			pstmt.setString(5, user.getUserAddress());
-			pstmt.setString(6, user.getUserEmail());
+			pstmt.setString(4, user.getUserAddress());
+			pstmt.setString(5, user.getUserEmail());
 			return pstmt.executeUpdate();
 			
 		}catch(Exception e) {
