@@ -7,7 +7,6 @@
 <jsp:setProperty name="user" property="userID" />
 <jsp:setProperty name="user" property="userPassword" />
 <jsp:setProperty name="user" property="userGender" />
-<jsp:setProperty name="user" property="userTemperature" />
 <jsp:setProperty name="user" property="userAddress" />
 <jsp:setProperty name="user" property="userEmail" />
 <!DOCTYPE html>
@@ -16,7 +15,7 @@
 <meta charset="UTF-8">
 
 
-<title>JSP 게시판 웹 사이트</title>
+<title>회원가입</title>
 </head>
 <body>
 	<%
@@ -34,7 +33,7 @@
 		}
 	
 		if(user.getUserID()==null || user.getUserPassword()==null||
-			user.getUserGender() ==null || user.getUserTemperature()==null || 
+			user.getUserGender() ==null ||
 			user.getUserAddress()==null || user.getUserEmail()==null){
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
