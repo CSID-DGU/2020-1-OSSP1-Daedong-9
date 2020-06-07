@@ -4,8 +4,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
+    font-size:100%;
     vertical-align: baseline;
 }
 
@@ -55,16 +55,18 @@ img {
 
 .temperature {
     margin: 10px 0 20px 0;
+    font-size:18px;
 }
 
 p {
-    font-size: 30px;
+    font-size: 18px;
 }
 
 /*------------------- description --------------------*/
 
 .description {
     margin: 20px 0 0 0;
+    font-size:18px;
 }
 
 /*------------------- media queries --------------------*/
@@ -87,7 +89,7 @@ p {
         margin: 10px 0 10px 0;
     }
     p {
-        font-size: 45px;
+        font-size: 18px;
     }
     .description {
         margin: 10px 0 0 0;
