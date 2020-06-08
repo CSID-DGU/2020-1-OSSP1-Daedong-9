@@ -7,7 +7,6 @@ const description = document.querySelector(".description");
 
 //Weather data that pulled form api:
 const weather = {};
-const address = {};
 
 //Api key & Kelvin(used since temp data from api returns kelvin):
 const key = "a49cd5d13210a3857dd22a130c762b15";
@@ -29,7 +28,8 @@ if (navigator.geolocation) {//위치를 받아온 경우
 }
 //Get weather data from api provider - "Open Weather Maps":
 function getWeather(latitude, longitude) {
-    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;   
+    
     console.log(api);
     //Fetch api data and store it:
     fetch(api)
@@ -64,14 +64,14 @@ function displayWeather() {
     temp.innerHTML =
         "<p>현재 온도 : " + weather.temperature + "°C"+
         ", 체감 온도 : "+
-        weather.temperature_feel+
+        weather.temperature_feel+ "°C"+
         "<p> 최고 온도 : "+
-        weather.temperature_high+
+        weather.temperature_high+ "°C"+
         ", 최저 온도 : "+
-        weather.temperature_low;
+        weather.temperature_low+ "°C";
     description.innerHTML =
     	"<p> 습도 : "+
-    	weather.humidity+
+    	weather.humidity+"%"+
         "<p> 날씨 : " +
         wDescEngToKor(weather.description) +//날씨
         "</p> 풍속 : "+
