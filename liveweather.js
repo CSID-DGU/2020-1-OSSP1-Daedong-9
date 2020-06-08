@@ -74,10 +74,6 @@ function displayWeather() {
     	weather.humidity+
         "<p> 날씨 : " +
         wDescEngToKor(weather.description) +//날씨
-        "<br> 위치 : " +
-        weather.city +//도시이름
-        ", " +
-        weather.country +//나라이름
         "</p> 풍속 : "+
         weather.wind+//바람
         "m/s</p>"
