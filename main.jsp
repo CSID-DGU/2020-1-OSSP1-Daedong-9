@@ -61,7 +61,15 @@ border:0;
    <nav class = "navbar navbar-default">
       <div class = "navbar-header">  
          <a class = "navbar-brand" href = "main.jsp">HOME</a>
-         <a class = "navbar-brand" href = "closetmain.html">CLOSET</a>
+         <%
+   if(userID==null){//로그인을 안 한 경우
+%>
+
+<%}else{//로그인 한 경우
+   %>
+<a class = "navbar-brand" href = "closetmain.html">CLOSET</a>
+<%} %>
+         
       </div>
       <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
          <%
@@ -133,7 +141,7 @@ border:0;
                    <div class="row">
                       <div class="col-md-3 edges thumbnail"><img src="images/5.JPG" alt="Image" style="max-width:100%;"></div>
                       <div class="col-md-3 edges thumbnail"><img src="images/6.JPG" alt="Image" style="max-width:100%;"></div>
-                      <div class="col-md-3 edges thumbnail"><img src="images/7.JPG" alt="Image" style="max-width:100%;"></div>
+                      <div class="col-md-3 edges thumbnail"><img src="iimages/7.JPG" alt="Image" style="max-width:100%;"></div>
                       <div class="col-md-3 edges thumbnail"><img src="images/8.JPG" alt="Image" style="max-width:100%;"></div>
                    </div><!--.row-->
                 </div><!--.item-->
