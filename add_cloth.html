@@ -18,11 +18,60 @@
 			</ul>
 		</div>
 	</nav>
-	
+	<font size=Large>
+		옷의 사진을 올려주세요
 	<br>
+	</font>	
 	<form method="post" enctype="multipart/form-data" action="upload.php"> 
 	    <input type="file" name="pic" />
-	    <input type="submit" value="옷 사진 업로드" />
+
+	 <font size=Large>
+	 	<br>옷 카테고리<br>
+	 </font>
+	 <font size=smaller>
+		상의<br>
+	</font>
+	<input type='radio' name='상의' value='민소매' />민소매
+	<input type='radio' name='상의' value='반팔' />반팔
+	<input type='radio' name='상의' value='얇은 셔츠' />얇은 셔츠
+	<input type='radio' name='상의' value='긴팔' />긴팔
+	<input type='radio' name='상의' value='얇은 니트' />얇은 니트
+	<input type='radio' name='상의' value='맨투맨' />맨투맨
+	<input type='radio' name='상의' value='기모 상의' />기모 상의
+	<font size=smaller>
+		<br><br>하의<br>
+	</font>
+	<input type='radio' name='하의' value='반바지' />반바지
+	<input type='radio' name='하의' value='면바지' />면바지
+	<input type='radio' name='하의' value='청바지' />청바지
+	<input type='radio' name='하의' value='기모 하의' />기모 하의
+	<input type='radio' name='하의' value='치마' />치마
+	<font size=smaller>
+		<br><br>원피스<br>
+	</font>
+	<input type='radio' name='원피스' value='원피스' />원피스
+	<input type='radio' name='원피스' value='점프 수트' />점프 수트
+	<font size=smaller>
+		<br><br>외투<br>
+	</font>
+	<input type='radio' name='외투' value='얇은 가디건' />얇은 가디건
+	<input type='radio' name='외투' value='가디건' />가디건
+	<input type='radio' name='외투' value='자켓' />자켓
+	<input type='radio' name='외투' value='야상' />야상
+	<input type='radio' name='외투' value='트렌치 코트' />트렌치 코트
+	<input type='radio' name='외투' value='코트' />코트
+	<input type='radio' name='외투' value='가죽자켓' />가죽자켓
+	<input type='radio' name='외투' value='두꺼운 코트' />두꺼운 코트
+	<input type='radio' name='외투' value='패팅' />패팅
+	<font size=smaller>
+		<br><br>기타<br>
+	</font>
+	<input type='radio' name='기타' value='스타킹' />스타킹
+	<input type='radio' name='기타' value='히트택' />히트텍
+	<input type='radio' name='기타' value='레깅스' />레깅스
+	<input type='radio' name='기타' value='목도리' />목도리
+	<br><br>
+	<input type='submit' value='업로드'>
 	</form>
 </body>
 </html>
