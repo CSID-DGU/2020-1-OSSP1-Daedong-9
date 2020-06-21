@@ -10,3 +10,9 @@ userAddress varchar(20),
 userEmail varchar(50),
 PRIMARY KEY(userID)
 )default charset='utf8';
+
+CREATE TABLE closet(
+userID varchar(20),
+clothCategory INT,
+clothAvailable INT
+);
