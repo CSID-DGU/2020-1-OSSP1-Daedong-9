@@ -98,7 +98,7 @@ function displayclothes() {
     else if(temperatures<12&&temperatures>=9){
         temp.innerHTML = '<center>'+'<h3>자켓, 트렌치코트, 야상, 니트, 청바지, 스타킹</h3>'+'<br>'
         	+'<img width="200px;" height="200px;" src="images/자켓.jpg"/>'
-        	+'<img width="200px;" height="200px;" src="images/트렌치코트.jpg"/>'
+        	+'<img width="200px;" height="250px;" src="images/트렌치코트.jpg"/>'
         	+'<img width="200px;" height="200px;" src="images/야상.jpg"/>'
         	+'<img width="200px;" height="200px;" src="images/니트.jpg"/>'
         	+'<img width="150px;" height="200px;" src="images/청바지.jpg"/>'
