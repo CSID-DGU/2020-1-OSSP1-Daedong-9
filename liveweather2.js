@@ -51,6 +51,7 @@ function displayclothes() {
 	icon.innerHTML="<h1><center>현재 날씨("
 		+temperatures
 		+"°C)에는 이러한 옷을 추천해요.<br></center></h1><br><br>";
+	temperatures=-9;
     //옷 차림 출력
     if(temperatures>=28){
         temp.innerHTML = '<center>'+'<h3>민소매, 반팔, 반바지, 원피스</h3>'+'<br>'
@@ -95,19 +96,21 @@ function displayclothes() {
         	+'</center>';
    }
     else if(temperatures<12&&temperatures>=9){
-        temp.innerHTML = '<center>'+'<h3>자켓, 트렌치코트, 야상, 청바지, 스타킹</h3>'+'<br>'
+        temp.innerHTML = '<center>'+'<h3>자켓, 트렌치코트, 야상, 니트, 청바지, 스타킹</h3>'+'<br>'
         	+'<img width="200px;" height="200px;" src="images/자켓.jpg"/>'
         	+'<img width="200px;" height="200px;" src="images/트렌치코트.jpg"/>'
         	+'<img width="200px;" height="200px;" src="images/야상.jpg"/>'
+        	+'<img width="200px;" height="200px;" src="images/니트.jpg"/>'
         	+'<img width="150px;" height="200px;" src="images/청바지.jpg"/>'
         	+'<img width="200px;" height="300px;" src="images/스타킹.jpg"/>'
         	+'</center>';
     }
     else if(temperatures<9&&temperatures>=5){
-        temp.innerHTML = '<center>'+'<h3>코트, 가죽자켓, 히트텍, 레깅스</h3>'+'<br>'
+        temp.innerHTML = '<center>'+'<h3>코트, 가죽자켓, 히트텍, 니트, 레깅스</h3>'+'<br>'
         	+'<img width="200px;" height="200px;" src="images/코트.jpg"/>'
         	+'<img width="250px;" height="200px;" src="images/가죽자켓.jpg"/>'
         	+'<img width="200px;" height="200px;" src="images/히트텍.jpg"/>'
+        	+'<img width="200px;" height="200px;" src="images/니트.jpg"/>'
         	+'<img width="200px;" height="200px;" src="images/레깅스.jpg"/>'
         	+'</center>';
     }
@@ -116,8 +119,8 @@ function displayclothes() {
         	+'<img width="200px;" height="200px;" src="images/패딩.jpg"/>'
         	+'<img width="200px;" height="250px;" src="images/두꺼운 코트.jpg"/>'
         	+'<img width="200px;" height="200px;" src="images/목도리.jpg"/>'
-        	+'<img width="200px;" height="200px;" src="images/기모상의.jpg"/>'
-        	+'<img width="200px;" height="200px;" src="images/기모하의.jpg"/>'
+        	+'<img width="200px;" height="200px;" src="images/기모 상의.jpg"/>'
+        	+'<img width="200px;" height="200px;" src="images/기모 하의.jpg"/>'
         	+'</center>';
     }
     
