@@ -13,5 +13,5 @@
 3. Java Resources에 src 폴더를 넣는다.
 4. Mysql Command에 DataTable.txt의 쿼리문을 입력한다.
 5. UserDAO.java, ClosetDAO.java의 dbURL, dbID, dbPassword 를 수정한다.
-5. WebContent 폴더 밑에 css, fonts, images, js 폴더를 넣는다.
+5. WebContent 폴더 밑에 css, fonts, images, js 폴더, 나머지 파일을 넣는다.
 6. main.jsp를 실행한다.
