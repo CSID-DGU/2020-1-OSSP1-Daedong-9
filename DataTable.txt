@@ -13,6 +13,38 @@ PRIMARY KEY(userID)
 
 CREATE TABLE closet(
 userID varchar(20),
-clothCategory INT,
-clothAvailable INT
+clothCategory varchar(20),
+clothAvailable varchar(20)
 );
+
+================
+Category Number
+================
+01	민소매
+02	반팔
+03	얇은 셔츠
+04	긴팔
+05	얇은 니트
+06	맨투맨
+07	기모 상의
+08	반바지
+09	면바지
+10	청바지
+11	기모 하의
+12	치마
+13	원피스
+14	점프 수트
+15	얇은 가디건
+16	가디건
+17	자켓
+18	야상
+19	트렌치 코트
+20	코트
+21	가죽자켓
+22	두꺼운 코트
+23	패딩
+24	스타킹
+25	히트텍
+26	레깅스
+27	목도리
+==================
