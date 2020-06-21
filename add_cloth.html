@@ -21,8 +21,12 @@
 	<font size=Large>
 		옷의 사진을 올려주세요
 	<br>
-	</font>	
-	<form method="post" enctype="multipart/form-data" action="upload.php"> 
+	</font>
+	<!--  
+		<form method="post" enctype="multipart/form-data" action="upload.php"> 
+		enctype이 존재하면 디비에 null 값이 올라가서 삭제
+	-->	
+	<form method="post" action="uploadAction.jsp"> 
 	    <input type="file" name="pic" />
 
 	 <font size=Large>
@@ -31,45 +35,45 @@
 	 <font size=smaller>
 		상의<br>
 	</font>
-	<input type='radio' name='상의' value='민소매' />민소매
-	<input type='radio' name='상의' value='반팔' />반팔
-	<input type='radio' name='상의' value='얇은 셔츠' />얇은 셔츠
-	<input type='radio' name='상의' value='긴팔' />긴팔
-	<input type='radio' name='상의' value='얇은 니트' />얇은 니트
-	<input type='radio' name='상의' value='맨투맨' />맨투맨
-	<input type='radio' name='상의' value='기모 상의' />기모 상의
+	<input type="radio" name="clothCategory" value="1" >민소매
+	<input type='radio' name='clothCategory' value="2" />반팔
+	<input type='radio' name='clothCategory' value='3' />얇은 셔츠
+	<input type='radio' name='clothCategory' value='4' />긴팔
+	<input type='radio' name='clothCategory' value='5' />얇은 니트
+	<input type='radio' name='clothCategory' value='6' />맨투맨
+	<input type='radio' name='clothCategory' value='7' />기모 상의
 	<font size=smaller>
 		<br><br>하의<br>
 	</font>
-	<input type='radio' name='하의' value='반바지' />반바지
-	<input type='radio' name='하의' value='면바지' />면바지
-	<input type='radio' name='하의' value='청바지' />청바지
-	<input type='radio' name='하의' value='기모 하의' />기모 하의
-	<input type='radio' name='하의' value='치마' />치마
+	<input type='radio' name='clothCategory' value='8' />반바지
+	<input type='radio' name='clothCategory' value='9' />면바지
+	<input type='radio' name='clothCategory' value='10' />청바지
+	<input type='radio' name='clothCategory' value='11' />기모 하의
+	<input type='radio' name='clothCategory' value='12' />치마
 	<font size=smaller>
 		<br><br>원피스<br>
 	</font>
-	<input type='radio' name='원피스' value='원피스' />원피스
-	<input type='radio' name='원피스' value='점프 수트' />점프 수트
+	<input type='radio' name='clothCategory' value='13' />원피스
+	<input type='radio' name='clothCategory' value='14' />점프 수트
 	<font size=smaller>
 		<br><br>외투<br>
 	</font>
-	<input type='radio' name='외투' value='얇은 가디건' />얇은 가디건
-	<input type='radio' name='외투' value='가디건' />가디건
-	<input type='radio' name='외투' value='자켓' />자켓
-	<input type='radio' name='외투' value='야상' />야상
-	<input type='radio' name='외투' value='트렌치 코트' />트렌치 코트
-	<input type='radio' name='외투' value='코트' />코트
-	<input type='radio' name='외투' value='가죽자켓' />가죽자켓
-	<input type='radio' name='외투' value='두꺼운 코트' />두꺼운 코트
-	<input type='radio' name='외투' value='패팅' />패팅
+	<input type='radio' name='clothCategory' value='15' />얇은 가디건
+	<input type='radio' name='clothCategory' value='16' />가디건
+	<input type='radio' name='clothCategory' value='17' />자켓
+	<input type='radio' name='clothCategory' value='18' />야상
+	<input type='radio' name='clothCategory' value='19' />트렌치 코트
+	<input type='radio' name='clothCategory' value='20' />코트
+	<input type='radio' name='clothCategory' value='21' />가죽자켓
+	<input type='radio' name='clothCategory' value='22' />두꺼운 코트
+	<input type='radio' name='clothCategory' value='23' />패딩
 	<font size=smaller>
 		<br><br>기타<br>
 	</font>
-	<input type='radio' name='기타' value='스타킹' />스타킹
-	<input type='radio' name='기타' value='히트택' />히트텍
-	<input type='radio' name='기타' value='레깅스' />레깅스
-	<input type='radio' name='기타' value='목도리' />목도리
+	<input type='radio' name='clothCategory' value='24' />스타킹
+	<input type='radio' name='clothCategory' value='25' />히트텍
+	<input type='radio' name='clothCategory' value='26' />레깅스
+	<input type='radio' name='clothCategory' value='27' />목도리
 	<br><br>
 	<input type='submit' value='업로드'>
 	</form>
