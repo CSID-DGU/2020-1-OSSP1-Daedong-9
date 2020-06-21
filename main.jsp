@@ -61,6 +61,7 @@ border:0;
    <nav class = "navbar navbar-default">
       <div class = "navbar-header">  
          <a class = "navbar-brand" href = "main.jsp">HOME</a>
+         <a class = "navbar-brand" href = "closetmain.html">CLOSET</a>
       </div>
       <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
          <%
