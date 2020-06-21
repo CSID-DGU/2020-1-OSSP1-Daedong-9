@@ -10,8 +10,8 @@
 실행방법
 1. 업로드된 파일을 모두 다운받는다.
 2. 이클립스와 MySQL을 연동시킨다(Connector J 사용).
-3. Java Resources>src에 closet, user 패키지 생성 후 자바파일을 넣는다.
+3. Java Resources에 src 폴더를 넣는다.
 4. Mysql Command에 DataTable.txt의 쿼리문을 입력한다.
-5. UserDAO.java, ClosetDAO.java 에서 dbURL, dbID, dbPassword 를 수정한다.
+5. UserDAO.java, ClosetDAO.java의 dbURL, dbID, dbPassword 를 수정한다.
 5. WebContent 폴더 밑에 css, fonts, images, js 폴더를 넣는다.
 6. main.jsp를 실행한다.
