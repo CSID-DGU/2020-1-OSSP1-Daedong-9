@@ -51,7 +51,6 @@ function displayclothes() {
 	icon.innerHTML="<h1><center>현재 날씨("
 		+temperatures
 		+"°C)에는 이러한 옷을 추천해요.<br></center></h1><br><br>";
-	temperatures=-9;
     //옷 차림 출력
     if(temperatures>=28){
         temp.innerHTML = '<center>'+'<h3>민소매, 반팔, 반바지, 원피스</h3>'+'<br>'
